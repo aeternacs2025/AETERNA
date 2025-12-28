@@ -121,7 +121,7 @@ footer p {
     color: white;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
     /* Buscá la clase que envuelve a Brian y Juan y poné su nombre acá */
     .equipo-container, .jugadores, section { 
         display: flex;
