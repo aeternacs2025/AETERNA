@@ -126,13 +126,12 @@ footer p {
     .equipo-container, .jugadores, section { 
         display: flex;
         flex-direction: column; /* Los pone uno abajo del otro */
-        align-items: center;
         gap: 20px;
     }
 
     /* Hace que las tarjetas ocupen el ancho del celular */
     .tarjeta, .player-card { 
-        width: 40% !important; 
+        width: 70% !important; 
         max-width: 350px;
     }
 
