@@ -104,3 +104,23 @@ footer p{
     margin-top: 10px;
     color: white;
 }
+
+@media (max-width: 768px) {
+    .contenedor-equipo { 
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .tarjeta-jugador { 
+        width: 90%; 
+        margin-bottom: 20px;
+    }
+    
+    h1 {
+        font-size: 2rem; 
+    }
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
