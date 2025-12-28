@@ -55,13 +55,8 @@ header h1 {
 
 .hr1 {
     background-color: white;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
-
-.hr2 {
-    margin-top: 20px;
-}
-
 .container {
     text-align: center;
 }
@@ -112,6 +107,10 @@ header h1 {
 }
 
 h3, h4 {
+    color: white;
+}
+p{
+    font-size: 20px;
     color: white;
 }
 
