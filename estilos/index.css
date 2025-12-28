@@ -121,21 +121,23 @@ footer p {
     color: white;
 }
 
-/* --- AQUÍ ESTÁ EL ARREGLO PARA CELULAR --- */
-@media (max-width: 768px) {
-    .equipo { 
-        flex-direction: column; /* Brian y Juan uno abajo del otro */
+@media (max-width: 600px) {
+    /* Buscá la clase que envuelve a Brian y Juan y poné su nombre acá */
+    .equipo-container, .jugadores, section { 
+        display: flex;
+        flex-direction: column; /* Los pone uno abajo del otro */
         align-items: center;
+        gap: 20px;
     }
 
-    .player-card { 
-        width: 90%; /* Que la tarjeta ocupe el ancho del celular */
-        margin: 10px 0; 
+    /* Hace que las tarjetas ocupen el ancho del celular */
+    .tarjeta, .player-card { 
+        width: 90% !important; 
+        max-width: 350px;
     }
-    
-    header h1 {
-        width: 80%; /* Que el título no se corte en pantallas chicas */
-        font-size: 1.5rem;
+
+    h1 {
+        font-size: 1.8rem; /* Ajusta el título para que no sea gigante */
     }
 }
 
