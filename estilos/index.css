@@ -1,157 +1,133 @@
-html {
+html{
     margin: 0;
     padding: 0;
 }
-
-body {
-    padding: 0;
-    background-color: #0d0d0d;
-    margin: 0;
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgba(0, 0, 0, 0.9);
 }
-
-.follow {
-    color: white;
-    margin: 0;
-    text-align: center;
-    font-size: 20px;
-}
-.c1{
-    font-size: 20px;
-    border-radius: 10px;
-    cursor: pointer;
-    background-color: yellow;
-}
-.c1:hover{
-    transform: translateY(-5px);
-    box-shadow: 0.1rem 0.1rem 0.2rem 0.2rem #B21B1B;
-}
-footer:hover {
-    box-shadow: 0px 0px 0px 0.3rem #B21B1B;
-}
-.d1{
-    text-align: center;
-}
-.a1 {
-    text-decoration: none;
-    color: whitesmoke;
-    font-size: 20px;
-    padding: 10px;
-}
-
-header {
-    text-align: center;
-}
-
-header h1 {
-    color: #f5f5f5;
-    background-color: #1f1f1f;  
-    text-align: center;
-    display: inline-block;
-    width: 300px;
-    border-radius: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    outline: 1px solid #B21B1B;
-}
-
-.hr1 {
-    background-color: white;
-    margin-bottom: 20px;
-}
-
-.hr2 {
-    margin-top: 20px;
-}
-
-.container {
-    text-align: center;
-}
-
-.container h2 {
-    color: white;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.equipo {
+.encabezado{
+    background-color: rgba(0, 0, 0);
     display: flex;
+    justify-content: center; /* Esto centra lo que esté adentro */
+    padding: 10px 0;
+    border-bottom: 1px solid red;
+    margin-bottom: 40px;
+}
+.contenedor{
+    width: 100%;
+    height: auto;
     justify-content: center;
-    flex-wrap: wrap; /* Esto ayuda a que bajen si no caben */
+    display: flex;
+    padding: 10px 0;
+}
+.imagen{
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    display: flex;
+    padding: 10px 0;
+}
+hr{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.tarjeta{
+    width: 400px;
+    height: auto;
+    justify-content: center;
+    display: flex;
+    padding: 10px 0;
+    background-color: black;
+    border-radius: 20px;
+    transition: 0.5 ease;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
-.player-card img {
-    width: 140px;
-    height: 140px;
+.nombre-logo{
+    background-color: gray;
+    color: white;
+    width: fit-content;      /* Esto hace que el gris sea del tamaño del texto */
+    padding: 10px 40px;     /* Espacio para que no se vea apretado */
+    margin: 20px 0;         /* 20px arriba/abajo, 0 a los lados (flex ya lo centra) */
+    text-align: center;
+    border-radius: 40px;
+}
+
+.img1{
+    width: 200px;
+    height: 200px; 
+    transition: 1s ease;
+    border-radius: 40px;
+    backface-visibility: hidden;
+}
+.img1:hover{
+    transform: translateY(-20px);
+    box-shadow: 1px 1px 10px 4px red;
+
+}
+.img2{
+    width: 200px;
+    height: 200px; 
     border-radius: 50%;
 }
-
-.player-card {
-    background-color: #1f1f1f;
-    width: 310px;
-    border-radius: 30px;
-    transition: transform 0.3s;
-    margin: 20px; /* Reduje un poco el margen para que quepa mejor */
+footer{
+    background-color: black;
+    padding: 10px;
+    margin-top: 50px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
-
-.player-card:hover {
-    transform: translateY(-20px);
-    box-shadow: 0.1rem 0.1rem 0.2rem 0.3rem #B21B1B;
-}
-
-.img1 {
-    width: 180px; 
-    height: 180px; 
-    margin: 30px auto; 
-    filter: drop-shadow(0px 0px 10px rgba(178, 27, 27, 0.7));
-    transition: all 0.4s ease-in-out;
-    cursor: pointer;
-}
-
-.img1:hover {
-    transform: scale(1.2);
-    filter: drop-shadow(0px 0px 20px rgba(255, 50, 50, 1));
-}
-
-h3, h4 {
-    color: white;
-}
-
-footer {
-    margin-top: 40px;
-    background-color: #1f1f1f;
-    padding: 40px;
-    transition: box-shadow 0.4s;
-}
-
-footer h4 {
+.text{
     margin: 0;
 }
-
-footer p {
-    margin-top: 10px;
+.text p{
+    display: inline-block;
     color: white;
+    font-size: 20px;
+    transition: 1s ease;
+}
+.p1{
+    padding-left: 10px;
+    padding-right: 10px ;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    transition: 1s ease;
+}
+.p1:hover{
+    color: cyan;
+    text-shadow: 4px 4px red;
+}
+footer{
+    border: 1px solid red;
+}
+.jugador p{
+    opacity: 0;
+    color: white;
+    text-align: center;
+    transition: 0.5s ease;
+}
+.tarjeta:hover{
+    box-shadow: 0px 0px 30px 0 red;
+    transform: translateY(-10px);
+}
+.tarjeta:hover p{
+    opacity: 1;
+    font-size: 20px;
+    text-shadow: 10px 10px red;
+    transform: translateY(-10px);
 }
 
-@media (max-width: 600px) {
-    /* Buscá la clase que envuelve a Brian y Juan y poné su nombre acá */
-    .equipo-container, .jugadores, section { 
-        display: flex;
-        flex-direction: column; /* Los pone uno abajo del otro */
-        gap: 20px;
-    }
+@media screen and (max-width: 480px){
 
-    /* Hace que las tarjetas ocupen el ancho del celular */
-    .tarjeta, .player-card { 
-        width: 70% !important; 
-        max-width: 350px;
-    }
-
-    h1 {
-        font-size: 1.8rem; /* Ajusta el título para que no sea gigante */
-    }
+body{
+    height: 100%;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
 }
+
