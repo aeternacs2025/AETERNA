@@ -123,11 +123,15 @@ footer{
     transform: translateY(-10px);
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 470px){
 
 body{
     height: 100%;
 }
 
+tarjeta{
+    height: 400px;
+    width: 10000px;
+}
 }
 
